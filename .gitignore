@@ -1,0 +1,12 @@
+.DS_Store
+### /Users/drew/.gitignore-boilerplates/Java.gitignore
+
+*.class
+
+# Package Files #
+*.war
+*.ear
+
+*.swp
+
+plugin-src/idp-toopher/build

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<!-- template name: html.form.toopher.template.html -->
+ 
+#set( $messageKeyPrefix = "html.form.toopher.template." )
+
+<html lang="$locale.getLanguage()" dir="ltr">
+<head>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/assets/js/toopher-web.js"></script>
+
+    <base href="$PingFedBaseURL"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>$templateMessages.getMessage($messageKeyPrefix, "headerMessage") Pairing</title>
+    <link rel="stylesheet" media="all" type="text/css" href="/assets/css/screen.1.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/css/fluid.1.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/css/fluid.landscape.1.css"/>
+    <style media="screen" type="text/css">
+        .ping-buttons .button { 
+                width: 85px; 
+        }
+        .toopher_label {
+                font-size: 84%;
+                font-weight: bold;
+        }
+        .toopher_input {
+        }
+    </style>
+</head>
+<body >
+<div class="ping-container" style="width : 90%">
+    <div class="ping-header" style="height: 45px;">
+    </div>
+    <!-- .ping-header -->
+    <div class="ping-body-container" style="padding: 22px">
+        <div style="position : relative; min-height: 190px">
+          <p>$toopher_error_message</p>
+        </div><!-- .ping-body -->
+    </div><!-- .ping-body-container -->
+    <div class="ping-footer-container">
+        <div class="ping-footer">
+            <div class="ping-credits"><span>$templateMessages.getMessage("global.poweredBy")</span> <a href="http://www.pingidentity.com">PingIdentity</a>
+            </div>
+        </div><!-- .ping-footer -->
+    </div><!-- .ping-footer-container -->
+</div><!-- .ping-container -->
+</body>
+</html>
+
